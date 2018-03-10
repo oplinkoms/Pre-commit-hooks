@@ -17,11 +17,11 @@
 # CONFIGURATION
 # set uncrustify path or executable
 # UNCRUSTIFY="/usr/bin/uncrustify"
-UNCRUSTIFY="uncrustify"
+UNCRUSTIFY="/usr/bin/uncrustify"
 
 # set uncrustify config location
 # CONFIG="/home/user/.config/uncrustify.cfg"
-CONFIG="/unspecified/"
+CONFIG="/usr/local/bin/oplink.cfg"
 
 # the source language: C, CPP, D, CS, JAVA, PAWN, VALA, OC, OC+
 # use AUTO to let Uncrustify decide which language a given file uses.

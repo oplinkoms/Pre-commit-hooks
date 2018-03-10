@@ -59,7 +59,9 @@ if [ $# = 1 ] ; then
         if [ -d "$1/.git" ] ; then
             GIT_FOLDER=$1/.git
         else
-            GIT_FOLDER=$1/`cat $1/.git | awk '{ print ($2) }'`
+            #GIT_FOLDER=$1/`cat $1/.git | awk '{ print ($2) }'`
+            #modify by fandy for ~/ila_shasta/...
+            GIT_FOLDER=`cat $1/.git | awk '{ print ($2) }'`
         fi
         # create hooks subfolder if it does not yet exist
         mkdir -p -- "$GIT_FOLDER/hooks"
